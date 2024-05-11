@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ff7613;
+  --text-color: #1c1c1c;
+}
+html {
+  font-size: 10px;
+}
+body{
+  font-family: Inter, sans-serif;
+  background-color: beige;
+  color: maroon;
+}
+
+/* common styles*/
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.description {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #212721;
+}
+.title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.item_preTitle {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 300;
+}
+.item_title {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+}
+.item_subtitle {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.item_preTitle1 {
+  font-size: 1rem;
+}
+.item_desc1 {
+  font-size: 1.4rem;
+  color: #241e03;
+  margin-bottom: 1.5rem;
+  color: rgb(100, 3, 3);
+}
+.item_preTitle2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+.item_subtitle3 {
+  color: white;
+  font-size: 1.7rem;
+}
+.item_preTitle3 {
+  color: #241e03;
+}
+
+
+
+
+
+/* layouts*/
+.container{
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  padding: 5rem;
+  background: white;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    gap: 7rem;
+  }
+}
+.profile {
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
+}
+.group-1{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.item_title {
+  margin-bottom: 2rem;
+  color: maroon;
+}
+.title3 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.item_preTitle3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.item_subtitle3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: maroon;
+}
+.item_preTitle4 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.profile_profileImg {
+  margin: 0 auto;
+  display: grid;
+  padding: 5rem;
+  max-width: 100%;
+  height: auto; 
+}
+
+
+/* profile*/
+.profile_container {
+  display: flex;
+  gap: 2rem;
+}
+.profile_profileImg {
+  max-width: 50000px;
+}
+.profile_name_firstName{
+  color: maroon;
+  font-weight: 200;
+  font-size: clamp(2rem, 8vw, 4rem);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: -0.8rem;
+}
+.profile_name_lastName{
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 15vw, 7rem);
+  text-transform: uppercase;
+  display: block;
+}
+.profile_title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.downloadBtn{
+  display: block;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: maroon;
+}
+.downloadBtn:hover {
+  color: var(--primary-color);
+}
+@media only screen and (max-width: 768px) {
+  .profile_container {
+    flex-direction: column;
+  }
+}
+
+/* expertise*/
+.skill_list {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  list-style: 2;
+}
+
+
+/* reference*/
+.ref_item {
+  margin-top: 2rem;
+}
+.ref_name {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* education*/
+.edu_item {
+  margin-top: 2rem;
+}
+.item_titlepar {
+  font-size: 1.7rem;
+  color: maroon;
+  margin-bottom: 1rem;
+}
+
+
+/* interest*/
+.int_items {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.int_item {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  color:rgb(100, 3, 3)
+}
+.int_item {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  gap: .5rem;
+  color:rgb(100, 3, 3)
+}
+.int_itemT {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .5rem;
+  color:rgb(100, 3, 3)
+}
